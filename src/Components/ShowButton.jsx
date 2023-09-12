@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import XLSX from 'xlsx';
+import * as XLSX from 'xlsx';
 import { Box, Button, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, styled } from '@mui/material';
 
 const StyledButton = styled(Button)({
