@@ -21,13 +21,13 @@ function App() {
 
   const handleUpload = (data) => {
     setExcelData(data);
-    setShowButtons(true); 
+    setShowButtons(true);
   };
 
   const handleReset = () => {
     localStorage.clear();
     setExcelData(null);
-    setShowButtons(false); 
+    setShowButtons(false);
   };
 
   return (
@@ -40,6 +40,7 @@ function App() {
       </Grid>
       <StyledContainer>
         <ResetButton onReset={handleReset} />
+        {/* Use showButtons to conditionally render */}
         {showButtons && (
           <>
             <ProcessButton />
@@ -52,6 +53,5 @@ function App() {
     </div>
   );
 }
-
 export default App;
 
